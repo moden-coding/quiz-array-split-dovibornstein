@@ -50,16 +50,36 @@ public class App {
 
     public static int[] copyFrontAndBack(int[] nums){
 
+    if (nums.length >= 2) {
+        
+
+        System.out.println(nums[0] & nums[1]);
+    }
+
+
+
         return null; //this is a placeholder
 
     }
 
     public static int maxWordLength(String sentence){
+    
+        String sentance = " ";
+        String longestWord = " ";
 
+        while (true) {
+            String[] parts = sentance.split(" ");
+            String word = parts[0];
 
-        return -1; //this is a placeholder
+            if (word.length() > longestWord.length()) {
+                longestWord = word;
+            }
+
+            
+            System.out.println(longestWord.length() + longestWord);
     }
 
 
 
+}
 }
